@@ -1,0 +1,15 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    # 服务名即注册中心的服务名,该模块与nacos-stock模块的服务名一致,即集群
+    name: nacos-stock
+  cloud:
+    # Nacos 配置
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
