@@ -1,9 +1,8 @@
-package com.github.imusk.nacos.order;
+package com.github.imusk.nacos.stock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author: Musk
@@ -14,13 +13,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 // 注册服务,使其他模块能够发现你
 @EnableDiscoveryClient
-// 开启Feign客户端支持
-@EnableFeignClients(basePackages = "com.github.imusk.nacos.order.feign")
 @SpringBootApplication
-public class NacosOrderApplication {
+public class NacosStockApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NacosOrderApplication.class);
+        SpringApplication.run(NacosStockApplication.class);
     }
 
 }

@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: nacos-stock
+  cloud:
+    # Nacos 配置
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+

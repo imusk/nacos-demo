@@ -14,6 +14,7 @@
     <modules>
         <module>nacos-config</module>
         <module>nacos-order</module>
+        <module>nacos-stock</module>
     </modules>
 
 
